@@ -1,12 +1,12 @@
-const http = require('http');
+const https = require('https');
 
 const api = {
-    host: 'https://reqres.in/api/users?page=2',
-    path: '/posts',
+    host: 'reqres.in',
+    path: '/api/users/2',
     method: 'GET'
 }
 
-const req = http.request(api, (res) => {
+const req = https.request(api, (res) => {
     let data = '';
 
     res.on('data', (chunk) => {
@@ -15,7 +15,7 @@ const req = http.request(api, (res) => {
 
     res.on('end', () => {
         console.log(JSON.parse(data));
-    });
+    }).on('error', (err) => {
+        console.log(err);
+    }).end();
 });
-
-req.end;
