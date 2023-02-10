@@ -1,0 +1,16 @@
+{
+  "name": "practice-webserver-for-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "author": "s0t12",
+  "license": "ISC",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "moment": "^2.29.4"
+  }
+}
