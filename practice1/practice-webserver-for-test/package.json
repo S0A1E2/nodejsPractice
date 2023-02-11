@@ -1,6 +1,6 @@
 {
   "name": "practice-webserver-for-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -9,6 +9,10 @@
   },
   "author": "s0t12",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/S0T12/nodejsPractice/tree/master/practice1/practice-webserver-for-test"
+  },
   "dependencies": {
     "http": "^0.0.1-security",
     "moment": "^2.29.4"
