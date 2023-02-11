@@ -1,12 +1,12 @@
 import got from 'got';
 
 async function getData() {
-    try {
         const response = await got('https://api.divar.ir/v8/web-search/mashhad/mobile-tablet?goods-business-type=all');
-        console.log(response);
-    } catch(error) {
-        console.log(error.response.body);
-    }
+        // console.log(response);
+        const jsonString = response.body.toString();
+        const json = JSON.parse(jsonString);
+        console.log(json.last_post_date);
 }
+
 
 getData();
