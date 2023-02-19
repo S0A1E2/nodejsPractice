@@ -1,7 +1,11 @@
 const http = require('http');
 const moment = require('moment');
 
-http.createServer((req, res) => {
+http.createServer((err, req, res) => {
+    if(err) {
+        console.error(err);
+    }
+    
     if(req == '/') {
         res.write('hello world');
     }
