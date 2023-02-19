@@ -11,5 +11,10 @@
 #### divar
 * I am trying to work with divar.ir api, I mean, I have to get the latest ads from the site, and display the last ad of the last hour, (this project is not yet completed).
 
-### practice 2
+### practice2
 * I tried to implement a RestFul api here.
+
+###  practice3
+#### football-game
+* I made a soccer game simulator with typescript.
+* This project is not modular at the moment, but it will be modular in the future.
