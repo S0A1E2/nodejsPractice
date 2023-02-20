@@ -1,6 +1,6 @@
 type PlayerPosition = 'Forward' | 'Midfield' | 'Defense' | 'Goalkeeper';
 type FieldPosition = [number, number];
-type FootballEvent = 'ShotOnGoal' | 'SuccessfulPass';
+type FootballEvent = 'ShotOnGoal' | 'SuccessfulPass' | string;
  
 interface Player {
     name: string,
