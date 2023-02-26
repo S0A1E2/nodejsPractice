@@ -104,5 +104,5 @@
   "include": [
     "./src/**/*",
     "./views/**/*"
-  ]
+, "src/base-repository.ts", "src/models/player.ts"  ]
 }

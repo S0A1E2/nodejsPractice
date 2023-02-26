@@ -1,4 +1,4 @@
-import { IsString, IsInt} from 'class-validator';
+import { IsString, IsInt, isInt, isString} from 'class-validator';
 
 export class Player {
     @IsString()
@@ -9,4 +9,5 @@ export class Player {
 
     @IsString()
     position!: string;
+    id!: number;
 }

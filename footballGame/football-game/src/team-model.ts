@@ -1,5 +1,5 @@
 import { IsString, ValidateNested } from "class-validator";
-import { Player } from "./player-model";
+import { Player } from "./models/player";
 
 export class Team {
     @IsString()
